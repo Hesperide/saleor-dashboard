@@ -1,0 +1,17 @@
+.signInButton:not(:disabled) {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.signInButton:not(:disabled):hover {
+  background-color: #1d4ed8;
+}
+
+.signInButton:not(:disabled):active {
+  background-color: #1e40af;
+}
+
+.signInButton:not(:disabled):focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
