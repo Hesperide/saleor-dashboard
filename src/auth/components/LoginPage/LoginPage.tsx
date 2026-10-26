@@ -16,6 +16,7 @@ import { Link } from "react-router-dom";
 import useStyles from "../styles";
 import LoginForm, { type LoginFormData } from "./form";
 import { LastLoginIndicator } from "./LastLoginIndicator";
+import styles from "./LoginPage.module.css";
 import { getErrorMessage, loginPageMessages } from "./messages";
 
 interface LoginCardProps {
@@ -133,6 +134,7 @@ const LoginPage = (props: LoginCardProps) => {
 
               <div className={classes.buttonContainer}>
                 <ButtonWithLoader
+                  className={styles.signInButton}
                   width="100%"
                   disabled={disabled}
                   variant="primary"
